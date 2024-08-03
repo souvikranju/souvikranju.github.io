@@ -208,11 +208,12 @@ var img = $('.myImg');
 var modalImg = $("#img01");
 var captionText = document.getElementById("caption");
 $('.myImg').click(function(){
-    modal.style.display = "block";
+    // modal.style.display = "block";
 
     // Get the full image located in /full
     var newSrc = this.src.replace("/src", "/src/full");
     modalImg.attr('src', newSrc);
+    modal.style.display = "block";
 
     captionText.innerHTML = this.alt;
 });
