@@ -97,9 +97,9 @@ function GoToTop() {
 					</thead>
 					<tbody>
 						<tr>
-							<td class="ColumnDate">2 September 2022</td>
-							<td class="ColumnPlace"><a href="../../../plc/5/3/fbd677fdffd317804f696da3935.html" title="Kisholoy Children&#8217;s Hospital">Kisholoy Children&#8217;s Hospital</a></td>
-							<td class="ColumnType">Birth</td>
+							<td class="ColumnDate"></td>
+							<td class="ColumnPlace"><a href="../../../plc/d/5/fbd6698d146147fa108d9bbd75d.html" title="Uchalan">Uchalan</a></td>
+							<td class="ColumnType">Residence</td>
 						</tr>
 					</tbody>
 				</table>
@@ -112,7 +112,7 @@ function GoToTop() {
   window.addEventListener("load", function() {
     var map;
     var tracelife = [
-    [87.880779, 23.224686, 'Kisholoy Children\'s Hospital', "<p><a href='../../../ppl/a/d/f45c8600624d08e75a4438f8da.html' title='I0002' target='_self'>Shreenika Pal</a>:<a href='../../../evt/0/b/f46302882195ebedf83bb27d0b0.html' title='2 September 2022' target='_self'>Birth</a> (2 September 2022)"],];;
+    [87.776400, 23.030384, 'Uchalan', "<p><a href='../../../ppl/a/d/f45c8600624d08e75a4438f8da.html' title='I0002' target='_self'>Shreenika Pal</a>:<a href='../../../evt/5/4/fbd68080758797327d7ba99b545.html' title='' target='_self'>Residence</a> ()"],];;
     var iconStyle = new ol.style.Style({
       image: new ol.style.Icon(({
         anchor: [0.2, 48],
@@ -143,7 +143,7 @@ function GoToTop() {
       source: markerSource,
       style: iconStyle
     });
-    var centerCoord = new ol.proj.transform([87.88077920, 23.22468617], 'EPSG:4326', 'EPSG:3857');
+    var centerCoord = new ol.proj.transform([87.77640017, 23.03038370], 'EPSG:4326', 'EPSG:3857');
     map = new ol.Map({
                  target: 'map_canvas',
                  layers: [new ol.layer.Tile({ source: new ol.source.OSM() }),
