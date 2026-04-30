@@ -35,9 +35,9 @@ jobs:
       - name: Build
         env:
           REACT_APP_GITHUB_TOKEN: ${{ secrets.REACT_APP_GITHUB_TOKEN }}
-          GITHUB_USERNAME: ${{ secrets.PORTFOLIO_GITHUB_USERNAME }}
-          USE_GITHUB_DATA: ${{ secrets.USE_GITHUB_DATA }}
-          MEDIUM_USERNAME: ${{ secrets.MEDIUM_USERNAME }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          USE_GITHUB_DATA: "true"
+          MEDIUM_USERNAME: ""
         run: npm run build
 
       - name: Deploy to GitHub Pages
