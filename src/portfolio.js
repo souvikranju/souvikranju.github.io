@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Souvik Pal",
-  title: "Hi, I'm Souvik 👋",
+  title: "Hi, I'm Souvik",
   subTitle: emoji(
-    "Embedded Developer with 9+ years of experience designing and optimizing low-level firmware for production-grade platforms — currently building secure element firmware inside Snapdragon SoCs at Qualcomm 🚀"
+    "Embedded Developer with 9+ years of experience designing and optimizing low-level firmware for production-grade platforms — currently leading Common Criteria Certified secure firmware development inside Snapdragon SoCs at Qualcomm"
   ),
   resumeLink: "",
   displayGreeting: true
@@ -46,26 +46,22 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I Do",
-  subTitle: "LEAD EMBEDDED FIRMWARE ENGINEER BUILDING SECURE, RELIABLE LOW-LEVEL SYSTEMS",
+  subTitle: "LEAD EMBEDDED FIRMWARE ENGINEER — COMMON CRITERIA CERTIFIED SECURE FIRMWARE ON SNAPDRAGON SOCs",
   skills: [
+    emoji("⚡ Common Criteria Certified secure firmware development — designing CC-compliant firmware meeting international security evaluation standards"),
+    emoji("⚡ Secure element on Snapdragon SoCs deployed across Mobile, XR, Compute, and IoT products"),
     emoji("⚡ Designing and optimizing low-level firmware for production-grade embedded platforms on ARM and RISC-V"),
-    emoji("⚡ Secure element firmware development on Snapdragon SoCs deployed across Mobile, XR, Compute, and IoT products"),
     emoji("⚡ FPGA-based pre-silicon validation, board bring-up, and debugging complex hardware–software interactions"),
     emoji("⚡ IoT home automation with ZigBee, BLE, and RTOS on multiple microcontroller families"),
-    emoji("⚡ Industrial data acquisition and solar energy monitoring systems using embedded Linux and Python"),
   ],
   softwareSkills: [
     {
-      skillName: "Embedded C",
-      fontAwesomeClassname: "fas fa-microchip"
+      skillName: "Common Criteria",
+      fontAwesomeClassname: "fas fa-certificate"
     },
     {
-      skillName: "C++",
+      skillName: "Embedded C/C++",
       fontAwesomeClassname: "fas fa-code"
-    },
-    {
-      skillName: "C",
-      fontAwesomeClassname: "fas fa-terminal"
     },
     {
       skillName: "ARM Architecture",
@@ -138,7 +134,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Kalyani Government Engineering College",
-      logo: require("./assets/images/embedded_desien.jpg"),
+      logo: require("./assets/images/KGEC.jpg"),
       subHeader: "Bachelor of Technology in Electronics and Communications Engineering",
       duration: "2014 – 2017",
       desc: "Undergraduate engineering with focus on electronics, communication systems, and embedded design.",
@@ -149,7 +145,7 @@ const educationInfo = {
     },
     {
       schoolName: "MBC Institute of Engineering & Technology",
-      logo: require("./assets/images/embedded_desien.jpg"),
+      logo: require("./assets/images/MBC.jpg"),
       subHeader: "Diploma in Electronics and Telecommunication Engineering",
       duration: "2011 – 2014",
       desc: "Three-year diploma programme in electronics and telecommunications.",
@@ -157,7 +153,7 @@ const educationInfo = {
     },
     {
       schoolName: "Burdwan CMS High School",
-      logo: require("./assets/images/embedded_desien.jpg"),
+      logo: require("./assets/images/cms.jpg"),
       subHeader: "10+2, Science",
       duration: "2008 – 2010",
       desc: "Higher secondary with Physics, Chemistry, Mathematics.",
@@ -182,10 +178,11 @@ const workExperiences = {
     {
       role: "Senior Lead Engineer",
       company: "Qualcomm",
-      companylogo: require("./assets/images/embedded_desien.jpg"),
+      companylogo: require("./assets/images/QCOM.webp"),
       date: "Dec 2024 – Present",
-      desc: "Leading secure element firmware development inside Snapdragon SoCs deployed across Mobile, Compute, XR, and IoT product lines.",
+      desc: "Leading Common Criteria Certified secure firmware development inside Snapdragon SoCs deployed across Mobile, Compute, XR, and IoT product lines.",
       descBullets: [
+        "Common Criteria Certified firmware development — CC-compliant design meeting international security evaluation standards",
         "RISC-V architecture firmware development and optimization",
         "UEFI and pre-boot security firmware on Snapdragon platforms",
         "Secure element design, TrustZone security architecture",
@@ -196,7 +193,7 @@ const workExperiences = {
     {
       role: "Senior Engineer",
       company: "Qualcomm",
-      companylogo: require("./assets/images/embedded_desien.jpg"),
+      companylogo: require("./assets/images/QCOM.webp"),
       date: "Aug 2022 – Nov 2024",
       desc: "Firmware engineering on Snapdragon SoCs with focus on device drivers and low-level systems.",
       descBullets: [
@@ -209,7 +206,7 @@ const workExperiences = {
     {
       role: "Sr. Embedded Developer",
       company: "Keus Smart Home",
-      companylogo: require("./assets/images/embedded_desien.jpg"),
+      companylogo: require("./assets/images/keus.jpeg"),
       date: "Apr 2021 – Aug 2022",
       desc: "Developed application firmware for IoT home automation devices with ZigBee and BLE communication.",
       descBullets: [
@@ -223,7 +220,7 @@ const workExperiences = {
     {
       role: "Embedded Developer",
       company: "Keus Smart Home",
-      companylogo: require("./assets/images/embedded_desien.jpg"),
+      companylogo: require("./assets/images/keus.jpeg"),
       date: "Sep 2019 – Mar 2021",
       desc: "Embedded firmware development for IoT home automation devices.",
       descBullets: [
@@ -234,7 +231,7 @@ const workExperiences = {
     {
       role: "System Design Engineer",
       company: "Photon Energy Systems Ltd",
-      companylogo: require("./assets/images/embedded_desien.jpg"),
+      companylogo: require("./assets/images/photon.webp"),
       date: "Dec 2018 – Aug 2019",
       desc: "Designed hardware schematics and application firmware for IoT devices in solar electricity generation plants.",
       descBullets: [
@@ -248,7 +245,7 @@ const workExperiences = {
     {
       role: "Embedded Developer",
       company: "Park Telesolutions Pvt Ltd",
-      companylogo: require("./assets/images/embedded_desien.jpg"),
+      companylogo: require("./assets/images/park.jpg"),
       date: "Feb 2018 – Dec 2018",
       desc: "R&D firmware development for security and surveillance product suite targeting bank branches and ATMs.",
       descBullets: [
@@ -264,8 +261,8 @@ const workExperiences = {
 // Open Source Section
 
 const openSource = {
-  showGithubProfile: "false",
-  display: false
+  showGithubProfile: "true",
+  display: true
 };
 
 // Big Projects Section
@@ -275,37 +272,37 @@ const bigProjects = {
   subtitle: "Key projects I have designed and built",
   projects: [
     {
-      image: require("./assets/images/embedded_desien.jpg"),
+      image: require("./assets/images/keus.jpeg"),
       projectName: "Embedded Switch",
       projectDesc: "IoT smart switchboard that fits behind a traditional switch board. Features AC appliance dimming with fading effect, fan level control via ZigBee/BLE. Deployed in home automation installations across India.",
       footerLink: []
     },
     {
-      image: require("./assets/images/embedded_desien.jpg"),
+      image: require("./assets/images/keus.jpeg"),
       projectName: "Smart Console",
       projectDesc: "Smart device replacing traditional switch boards with 16 push buttons, RGB light interface, and proximity wake-up. Supports relay, DALI, scene execution, appliance group control, fan speed, and up to 4 curtain controls.",
       footerLink: []
     },
     {
-      image: require("./assets/images/embedded_desien.jpg"),
+      image: require("./assets/images/photon.webp"),
       projectName: "Smart Pyranometer",
       projectDesc: "Solar irradiance sensor with accelerometer, gyroscope, and ambient temperature sensor. Outputs temperature-calibrated solar irradiance, 3-axis gyro, and ambient temperature data in SunSpec Modbus protocol.",
       footerLink: []
     },
     {
-      image: require("./assets/images/embedded_desien.jpg"),
+      image: require("./assets/images/photon.webp"),
       projectName: "SCADA System for Solar Plants",
       projectDesc: "Supervisory control and data acquisition system based on a single board computer. Periodically collects data from all solar Modbus sensors and stores in cloud database for analysis. Built with embedded Linux using Python and C.",
       footerLink: []
     },
     {
-      image: require("./assets/images/embedded_desien.jpg"),
+      image: require("./assets/images/park.jpg"),
       projectName: "Third Eye – Security Suite",
       projectDesc: "Remote security, surveillance and control system for bank branches and ATMs. Integrates door, shutter, smoke, tamper, vibration, glass-break, motion, PIR, and panic sensors. Communicates via GPRS to central surveillance server over RS485 bus.",
       footerLink: []
     },
     {
-      image: require("./assets/images/embedded_desien.jpg"),
+      image: require("./assets/images/KGEC.jpg"),
       projectName: "JLSG Transistor Simulation",
       projectDesc: "Analytical model of a Junction-less Surrounding-gate (JLSG) transistor for device design, optimization and circuit simulation. Final year B.Tech research project at Kalyani Government Engineering College (2016–2017).",
       footerLink: []
