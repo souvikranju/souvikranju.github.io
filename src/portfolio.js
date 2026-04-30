@@ -25,14 +25,14 @@ const greeting = {
   subTitle: emoji(
     "Embedded Developer with 9+ years of experience designing and optimizing low-level firmware for production-grade platforms — currently leading Common Criteria Certified secure firmware development inside Snapdragon SoCs at Qualcomm"
   ),
-  resumeLink: "",
+  resumeLink: "https://drive.google.com/",
   displayGreeting: true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "",
+  github: "https://github.com/souvikranju",
   linkedin: "https://www.linkedin.com/in/souvikranju/",
   gmail: "souvik.ranju@gmail.com",
   gitlab: "",
@@ -353,7 +353,7 @@ const podcastSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-  display: false
+  display: true
 };
 
 // Contact Section
