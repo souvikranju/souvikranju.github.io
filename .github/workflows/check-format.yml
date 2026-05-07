@@ -11,10 +11,10 @@ env:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   check-format:
-    # Skip if this push was made by the bot to avoid infinite loops
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
@@ -30,15 +30,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Auto-format and commit if needed
-        run: |
-          npm run format
-          if git diff --quiet; then
-            echo "All files are already formatted."
-          else
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add -A
-            git commit -m "style: auto-format code with prettier"
-            git push
-          fi
+      - name: Auto-format if needed
+        run: npm run format
+
+      - name: Create PR if formatting changed anything
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "style: auto-format code with prettier"
+          branch: auto-format/prettier
+          delete-branch: true
+          title: "style: auto-format code with prettier"
+          body: "Automated formatting fixes applied by Prettier."
+          base: main

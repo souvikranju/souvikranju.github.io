@@ -23,7 +23,7 @@ const greeting = {
   username: "Souvik Pal",
   title: "Hi, I'm Souvik",
   subTitle: emoji(
-    "Embedded Developer with 9+ years of experience designing and optimizing low-level firmware for production-grade platforms — currently leading Common Criteria Certified secure firmware development inside Snapdragon SoCs at Qualcomm"
+    "Embedded Developer with 9+ years of experience designing and optimizing low-level firmware for production-grade platforms — currently leading Common Criteria Certified secure element firmware development inside Snapdragon SoCs at Qualcomm"
   ),
   resumeLink: "https://drive.google.com/",
   displayGreeting: true
@@ -46,7 +46,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I Do",
-  subTitle: "LEAD EMBEDDED FIRMWARE ENGINEER — COMMON CRITERIA CERTIFIED SECURE FIRMWARE ON SNAPDRAGON SOCs",
+  subTitle: "LEAD EMBEDDED FIRMWARE ENGINEER — DESIGNING AND OPTIMIZING LOW-LEVEL SECURE FIRMWARE ON SNAPDRAGON SOCs",
   skills: [
     emoji("⚡ Common Criteria Certified secure firmware development — designing CC-compliant firmware meeting international security evaluation standards"),
     emoji("⚡ Secure element on Snapdragon SoCs deployed across Mobile, XR, Compute, and IoT products"),
@@ -57,7 +57,7 @@ const skillsSection = {
   softwareSkills: [
     {
       skillName: "Common Criteria",
-      fontAwesomeClassname: "fas fa-certificate"
+      fontAwesomeClassname: "fas fa-shield-alt"
     },
     {
       skillName: "Embedded C/C++",
@@ -69,7 +69,7 @@ const skillsSection = {
     },
     {
       skillName: "RISC-V",
-      fontAwesomeClassname: "fas fa-code"
+      fontAwesomeClassname: "fas fa-microchip"
     },
     {
       skillName: "RTOS",
@@ -77,7 +77,7 @@ const skillsSection = {
     },
     {
       skillName: "Device Drivers",
-      fontAwesomeClassname: "fas fa-cog"
+      fontAwesomeClassname: "fas fa-plug"
     },
     {
       skillName: "UEFI",
@@ -89,7 +89,7 @@ const skillsSection = {
     },
     {
       skillName: "FPGA",
-      fontAwesomeClassname: "fas fa-network-wired"
+      fontAwesomeClassname: "fas fa-th"
     },
     {
       skillName: "IoT",
@@ -101,7 +101,7 @@ const skillsSection = {
     },
     {
       skillName: "Bootloader",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: "fas fa-power-off"
     },
     {
       skillName: "Linux",
@@ -117,11 +117,11 @@ const skillsSection = {
     },
     {
       skillName: "GDB / Trace32",
-      fontAwesomeClassname: "fas fa-bug"
+      fontAwesomeClassname: "fas fa-terminal"
     },
     {
       skillName: "SoC",
-      fontAwesomeClassname: "fas fa-puzzle-piece"
+      fontAwesomeClassname: "fas fa-microchip"
     },
   ],
   display: true
@@ -180,14 +180,12 @@ const workExperiences = {
       company: "Qualcomm",
       companylogo: require("./assets/images/QCOM.webp"),
       date: "Dec 2024 – Present",
-      desc: "Leading Common Criteria Certified secure firmware development inside Snapdragon SoCs deployed across Mobile, Compute, XR, and IoT product lines.",
+      desc: "Leading secure firmware development for Common Criteria certified secure elements inside Snapdragon SoCs, shipped across Mobile, Compute, XR, and IoT product lines.",
       descBullets: [
-        "Common Criteria Certified firmware development — CC-compliant design meeting international security evaluation standards",
-        "RISC-V architecture firmware development and optimization",
-        "UEFI and pre-boot security firmware on Snapdragon platforms",
-        "Secure element design, TrustZone security architecture",
-        "FPGA-based pre-silicon validation and hardware bring-up",
-        "Cross-team collaboration across Mobile, XR, Compute, and IoT divisions"
+        "Android Security services — Keymint, Gatekeeper, Weaver — implemented on secure elements with cryptographic hardware accelerators",
+        "Firmware architecture for RISC-V-based secure element cores — one of few production-scale RISC-V firmware efforts inside Snapdragon",
+        "Defined TrustZone isolation boundaries between secure-world firmware and rich OS, enforcing hardware-rooted trust across product lines",
+        "Led FPGA-based pre-silicon validation and board bring-up, surfacing hardware–firmware integration defects before tape-out"
       ]
     },
     {
@@ -195,12 +193,12 @@ const workExperiences = {
       company: "Qualcomm",
       companylogo: require("./assets/images/QCOM.webp"),
       date: "Aug 2022 – Nov 2024",
-      desc: "Firmware engineering on Snapdragon SoCs with focus on device drivers and low-level systems.",
+      desc: "Firmware engineering on Snapdragon SoCs with ownership of device driver stack and secure element bring-up on ARM platforms.",
       descBullets: [
-        "Embedded C++ firmware development for production-grade platforms",
-        "Device driver development for Snapdragon peripherals",
-        "Board bring-up and debugging complex hardware–software interactions on ARM architectures",
-        "Secure coding practices for production firmware"
+        "Authored Embedded C++ device drivers for secure element peripherals —  integrated into production Snapdragon firmware",
+        "Board bring-up and hardware–software debug on ARM Cortex-M class cores using JTAG, Trace32, and logic analysis",
+        "Enforced secure coding practices — buffer overflow mitigations, privilege separation, and static analysis — across production firmware codebase",
+        "Collaborated with hardware design teams during silicon validation, translating electrical spec ambiguities into firmware workarounds"
       ]
     },
     {
