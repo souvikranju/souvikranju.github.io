@@ -32,7 +32,17 @@
 .project-button > .main-button {
   margin-right: 0 !important;
 }
-/* Media Query */
+.resume-btn-disabled-wrapper {
+  display: inline-block;
+  cursor: not-allowed;
+
+  .main-button {
+    pointer-events: none;
+    opacity: 0.45;
+    transform: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   .main-button {
     font-size: 0.938rem;
