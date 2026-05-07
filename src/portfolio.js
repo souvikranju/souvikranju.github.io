@@ -46,13 +46,24 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I Do",
-  subTitle: "LEAD EMBEDDED FIRMWARE ENGINEER — DESIGNING AND OPTIMIZING LOW-LEVEL SECURE FIRMWARE ON SNAPDRAGON SOCs",
+  subTitle:
+    "LEAD EMBEDDED FIRMWARE ENGINEER — DESIGNING AND OPTIMIZING LOW-LEVEL SECURE FIRMWARE ON SNAPDRAGON SOCs",
   skills: [
-    emoji("⚡ Common Criteria Certified secure firmware development — designing CC-compliant firmware meeting international security evaluation standards"),
-    emoji("⚡ Secure element on Snapdragon SoCs deployed across Mobile, XR, Compute, and IoT products"),
-    emoji("⚡ Designing and optimizing low-level firmware for production-grade embedded platforms on ARM and RISC-V"),
-    emoji("⚡ FPGA-based pre-silicon validation, board bring-up, and debugging complex hardware–software interactions"),
-    emoji("⚡ IoT home automation with ZigBee, BLE, and RTOS on multiple microcontroller families"),
+    emoji(
+      "⚡ Common Criteria Certified secure firmware development — designing CC-compliant firmware meeting international security evaluation standards"
+    ),
+    emoji(
+      "⚡ Secure element on Snapdragon SoCs deployed across Mobile, XR, Compute, and IoT products"
+    ),
+    emoji(
+      "⚡ Designing and optimizing low-level firmware for production-grade embedded platforms on ARM and RISC-V"
+    ),
+    emoji(
+      "⚡ FPGA-based pre-silicon validation, board bring-up, and debugging complex hardware–software interactions"
+    ),
+    emoji(
+      "⚡ IoT home automation with ZigBee, BLE, and RTOS on multiple microcontroller families"
+    )
   ],
   softwareSkills: [
     {
@@ -122,7 +133,7 @@ const skillsSection = {
     {
       skillName: "SoC",
       fontAwesomeClassname: "fas fa-microchip"
-    },
+    }
   ],
   display: true
 };
@@ -135,7 +146,8 @@ const educationInfo = {
     {
       schoolName: "Kalyani Government Engineering College",
       logo: require("./assets/images/KGEC.jpg"),
-      subHeader: "Bachelor of Technology in Electronics and Communications Engineering",
+      subHeader:
+        "Bachelor of Technology in Electronics and Communications Engineering",
       duration: "2014 – 2017",
       desc: "Undergraduate engineering with focus on electronics, communication systems, and embedded design.",
       descBullets: [
@@ -272,37 +284,43 @@ const bigProjects = {
     {
       image: require("./assets/images/keus.jpeg"),
       projectName: "Embedded Switch",
-      projectDesc: "IoT smart switchboard that fits behind a traditional switch board. Features AC appliance dimming with fading effect, fan level control via ZigBee/BLE. Deployed in home automation installations across India.",
+      projectDesc:
+        "IoT smart switchboard that fits behind a traditional switch board. Features AC appliance dimming with fading effect, fan level control via ZigBee/BLE. Deployed in home automation installations across India.",
       footerLink: []
     },
     {
       image: require("./assets/images/keus.jpeg"),
       projectName: "Smart Console",
-      projectDesc: "Smart device replacing traditional switch boards with 16 push buttons, RGB light interface, and proximity wake-up. Supports relay, DALI, scene execution, appliance group control, fan speed, and up to 4 curtain controls.",
+      projectDesc:
+        "Smart device replacing traditional switch boards with 16 push buttons, RGB light interface, and proximity wake-up. Supports relay, DALI, scene execution, appliance group control, fan speed, and up to 4 curtain controls.",
       footerLink: []
     },
     {
       image: require("./assets/images/photon.webp"),
       projectName: "Smart Pyranometer",
-      projectDesc: "Solar irradiance sensor with accelerometer, gyroscope, and ambient temperature sensor. Outputs temperature-calibrated solar irradiance, 3-axis gyro, and ambient temperature data in SunSpec Modbus protocol.",
+      projectDesc:
+        "Solar irradiance sensor with accelerometer, gyroscope, and ambient temperature sensor. Outputs temperature-calibrated solar irradiance, 3-axis gyro, and ambient temperature data in SunSpec Modbus protocol.",
       footerLink: []
     },
     {
       image: require("./assets/images/photon.webp"),
       projectName: "SCADA System for Solar Plants",
-      projectDesc: "Supervisory control and data acquisition system based on a single board computer. Periodically collects data from all solar Modbus sensors and stores in cloud database for analysis. Built with embedded Linux using Python and C.",
+      projectDesc:
+        "Supervisory control and data acquisition system based on a single board computer. Periodically collects data from all solar Modbus sensors and stores in cloud database for analysis. Built with embedded Linux using Python and C.",
       footerLink: []
     },
     {
       image: require("./assets/images/park.jpg"),
       projectName: "Third Eye – Security Suite",
-      projectDesc: "Remote security, surveillance and control system for bank branches and ATMs. Integrates door, shutter, smoke, tamper, vibration, glass-break, motion, PIR, and panic sensors. Communicates via GPRS to central surveillance server over RS485 bus.",
+      projectDesc:
+        "Remote security, surveillance and control system for bank branches and ATMs. Integrates door, shutter, smoke, tamper, vibration, glass-break, motion, PIR, and panic sensors. Communicates via GPRS to central surveillance server over RS485 bus.",
       footerLink: []
     },
     {
       image: require("./assets/images/KGEC.jpg"),
       projectName: "JLSG Transistor Simulation",
-      projectDesc: "Analytical model of a Junction-less Surrounding-gate (JLSG) transistor for device design, optimization and circuit simulation. Final year B.Tech research project at Kalyani Government Engineering College (2016–2017).",
+      projectDesc:
+        "Analytical model of a Junction-less Surrounding-gate (JLSG) transistor for device design, optimization and circuit simulation. Final year B.Tech research project at Kalyani Government Engineering College (2016–2017).",
       footerLink: []
     }
   ],
@@ -358,7 +376,8 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? My inbox is open for all.",
+  subtitle:
+    "Discuss a project or just want to say hi? My inbox is open for all.",
   number: "",
   email_address: "souvik.ranju@gmail.com"
 };
