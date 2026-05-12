@@ -3,20 +3,20 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation";
+import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
 
 const splashScreen = {
-  enabled: true,
+  enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000
+  duration: 2000 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true
+  animated: true // Set to false to use static SVG
 };
 
 const greeting = {
@@ -39,7 +39,9 @@ const socialMediaLinks = {
   facebook: "",
   medium: "",
   stackoverflow: "",
-  display: true
+  // Instagram, Twitter and Kaggle are also supported in the links!
+  // To customize icons and social links, tweak src/components/SocialMedia
+  display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
@@ -65,6 +67,10 @@ const skillsSection = {
       "⚡ IoT home automation with ZigBee, BLE, and RTOS on multiple microcontroller families"
     )
   ],
+
+  /* Make Sure to include correct Font Awesome Classname to view your icon
+https://fontawesome.com/icons?d=gallery */
+
   softwareSkills: [
     {
       skillName: "Common Criteria",
@@ -135,13 +141,13 @@ const skillsSection = {
       fontAwesomeClassname: "fas fa-microchip"
     }
   ],
-  display: true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true,
+  display: true, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "Kalyani Government Engineering College",
@@ -177,7 +183,7 @@ const educationInfo = {
 // Tech Stack / Proficiency Bars
 
 const techStack = {
-  viewSkillBars: false,
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [],
   displayCodersrank: false
 };
@@ -185,7 +191,7 @@ const techStack = {
 // Work Experience Section
 
 const workExperiences = {
-  display: true,
+  display: true,  //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Senior Lead Engineer",
@@ -268,11 +274,11 @@ const workExperiences = {
   ]
 };
 
-// Open Source Section
+// Open Source Section to View Github Pinned Projects
 
 const openSource = {
-  showGithubProfile: "true",
-  display: true
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Big Projects Section
@@ -324,7 +330,7 @@ const bigProjects = {
       footerLink: []
     }
   ],
-  display: true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
